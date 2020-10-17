@@ -1,0 +1,6 @@
+# app
+uploads
+
+# node
+node_modules
+package-lock.json
