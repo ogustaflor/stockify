@@ -1,0 +1,7 @@
+# app
+uploads
+src/database/index.sqlite
+
+# node
+node_modules
+package-lock.json
