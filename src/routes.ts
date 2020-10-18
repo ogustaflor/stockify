@@ -16,5 +16,10 @@ routes.get('/companies/:id', CompaniesController.show);
 routes.get('/products', ProductsController.index);
 routes.post('/products', upload.single('picture'), ProductsController.store);
 routes.get('/products/:id', ProductsController.show);
+routes.put('/products/:id', upload.single('picture'), ProductsController.update);
+routes.put('/products/:id/increment', ProductsController.increment);
+routes.put('/products/:id/decrement', ProductsController.decrement);
+routes.put('/products/:id/activate', ProductsController.activate);
+routes.put('/products/:id/deactivate', ProductsController.deactivate);
 
 export default routes;
